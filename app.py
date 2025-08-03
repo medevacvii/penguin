@@ -15,7 +15,8 @@ with st.expander("Data Visualization"):
 with st.expander("Input data"):
   pass
 
-with st.expander("Data Preparation")
+with st.expander("Data Preparation"):
+  pass
 
 with st.sidebar:
   st.header("Input Variables")
