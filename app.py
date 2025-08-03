@@ -26,12 +26,10 @@ with st.expander("Data"):
   st.write("Mor information about Data")
   info = df.info()
   st.text(info)
-  
+
+
 with st.expander("Data Visualization"):
   st.scatter_chart(data = df, x = 'bill_length_mm', y = 'body_mass_g', color = 'species')
-
-with st.expander("Input data"):
-  pass
 
 with st.expander("Data Preparation"):
   pass
@@ -55,3 +53,9 @@ with st.sidebar:
 
   input_df = pd.DataFrame(data, index[0])
   input_penguins = pd.concat([input_df, X_raw], axis = 0)
+
+with st.expander("Input data"):
+  st.write("**Input data**")
+  input_df
+  st.write("**Combined Data**")
+  input_penguins
