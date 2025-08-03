@@ -25,7 +25,7 @@ with st.expander("Data"):
 
   st.write("Mor information about Data")
   info = df.info()
-  info
+  st.text(info)
   
 with st.expander("Data Visualization"):
   pass
