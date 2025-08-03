@@ -61,7 +61,7 @@ with st.expander("Input data"):
   input_penguins
 
 # One hot encoding for X
-encode = ['island', 'sex']
+encode = ['island', 'gender']
 df_penguins = pd.get_dummies(input_penguins, prefix = encode)
 X = df_penguins[1:]
 input_row = df_penguins[:1]
